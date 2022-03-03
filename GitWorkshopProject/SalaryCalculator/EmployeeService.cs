@@ -14,7 +14,7 @@ namespace SalaryCalculator
             }
 
             decimal factor = 0;
-
+          
             switch(EmployeeType){
                 case EmployeeType.Engineer:
                     factor = 1;
@@ -27,7 +27,6 @@ namespace SalaryCalculator
                 case EmployeeType.Expert:
                     factor = 3;
                     break;
-            }
 
             var salary = BASIC_SALARY * years * factor;
 
